@@ -15,7 +15,7 @@ from reportlab.platypus import Table, TableStyle
 from reportlab.lib import colors
 
 # ================= 1. CONFIG & INITIALIZATION =================
-st.set_page_config(page_title="JP - Logistics System", layout="wide")
+st.set_page_config(page_title="NONT - Logistics System", layout="wide")
 
 FONT_NAME = 'Helvetica-Bold'
 try:
@@ -25,7 +25,7 @@ try:
 except:
     pass
 
-SHEET_ID = "1orw1FN0V40U_5gSjs26OThJr7ynPZOtvrL8gMh9tMJ8"
+SHEET_ID = "1hgRxzT50-NAK6HTsUSOrKA3AYAoMtxEUlOEyi-_25OM"
 INV_SHEET = "Invoices"
 ITEM_SHEET = "InvoiceItems"
 INV_KEY = "invoice_no"
@@ -241,7 +241,7 @@ def generate_pdf_file(inv_no, items, data_dict=None):
     return buf
 
 # ================= 4. MAIN UI =================
-st.title("🚚 ใบกำกับขนส่ง TLD")
+st.title("🚚 ใบกำกับขนส่ง NONT")
 
 with st.expander("🔍 ค้นหา/แก้ไข/พิมพ์บิลเก่า"):
     if not inv_df.empty:
